@@ -11,3 +11,80 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+
+/* Quicksand Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Navigation */
+
+body:before {
+    display: none;
+}
+
+.site {
+    max-width: none;
+}
+
+#sidebar {
+    background-color: #e7efe5;
+    width: 10%;
+    height: 100%;
+    overflow: auto;
+    /* max-height: 100%;  */
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-left: 10.75%;    
+    /* text-align: center; */
+    letter-spacing: 1px;
+    display: block;
+}
+
+.main-navigation ul {
+    border: none;
+}
+
+.main-navigation li {
+    border: none;
+}
+
+img.custom-logo {
+    max-height: 50px;
+}
+
+  .site-branding {
+    text-align: center;
+}  
+
+/* #site-navigation {
+    padding-left: 0px;
+} */
+
+#masthead.site-header {
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+/* Body */
+
+body {
+    background-color: #f9f9f9;
+}
+
+.site-content {
+    margin-left: 10%;
+    width: 90%;
+}
+
+/* Footer */
+
+#colophon.site-footer {
+    margin-left: 10%;
+    width: 90%;
+}
