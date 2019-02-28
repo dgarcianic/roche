@@ -17,3 +17,74 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /* Navigation */
+
+#sidebar {
+    background-color: #e7efe5;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    overflow: auto;
+}
+
+#sidebar #sideNavigation {
+    text-align: center;
+}
+
+#sidebar #sideNavigation a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold; 
+    letter-spacing: 1px;
+}
+
+
+/* */
+
+#page.site {
+    width: 90%;
+    float: right;
+}
+
+/* Removes Stuff */
+
+#masthead {
+    display: none;
+}
+
+.entry-header {
+    display: none;
+}
+
+/* Removes Margin and Padding Between Posts */
+
+@media screen and (min-width: 48em){
+.panel-content .wrap {
+    padding-bottom: 0;
+    padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 30em) {
+.panel-content .wrap {
+    padding-bottom: 0;
+    padding-top: 0;
+    }
+}
+
+.panel-content .wrap {
+    padding-bottom: 0;
+    padding-top: 0m;
+}
+
+/* Home */
+
+
+
+/* Services */
+
+#services-image.elementor-element.elementor-element-84ca495.elementor-widget.elementor-widget-image {
+    height: 200px;
+}
