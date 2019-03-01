@@ -30,16 +30,25 @@
     overflow: auto;
 }
 
-#sidebar #sideNavigation {
+/* #sidebar #sideNavigation {
     text-align: center;
-}
+} */
 
 #sidebar #sideNavigation a {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold; 
     letter-spacing: 1px;
+    text-align: center;
 }
 
+.main-navigation li {
+    display: block;
+    background-color: #e7efe5;
+}
+
+.main-navigation a {
+    padding: .5em;
+}
 
 /* */
 

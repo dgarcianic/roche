@@ -24,14 +24,22 @@
 
 <body <?php body_class(); ?>>
 
-		<div id="sidebar" class="sidebar">
+		<!-- <div id="sidebar" class="sidebar">
 			<div id="sideNavigation">
 				<a href="#">Home</a><br>
   				<a href="#">Services</a><br>
   				<a href="#">About</a><br>
   				<a href="#">Contact</a><br>
 			</div>
-		</div>
+		</div> -->
+
+		<?php if ( has_nav_menu( 'top' ) ) : ?>
+			<div id="sidebar">
+				<div id="sideNavigation">
+					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+				</div><!-- .wrap -->
+			</div><!-- .navigation-top -->
+		<?php endif; ?>
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
