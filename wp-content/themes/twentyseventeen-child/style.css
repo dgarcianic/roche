@@ -85,15 +85,55 @@
 
 .panel-content .wrap {
     padding-bottom: 0;
-    padding-top: 0m;
+    padding-top: 0;
 }
 
 /* Home */
 
+.homeRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeColumn {
+    flex: 1;
+}
+
+.homeColumn img {
+    vertical-align: middle;
+}
+
+.page-one-column .panel-content .wrap {
+    max-width: 100%;
+}
+
+.wrap {
+    padding: 0;
+}
+
+.bookRocheImage {
+    position: relative;
+}
+
+#bookRoche {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 5px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 300px;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    background-color: white;
+    color: green;
+    border: solid 2px green;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
 /* Services */
 
-#services-image.elementor-element.elementor-element-84ca495.elementor-widget.elementor-widget-image {
-    height: 200px;
-}
