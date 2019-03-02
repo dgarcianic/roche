@@ -30,6 +30,15 @@
     overflow: auto;
 }
 
+#navLogo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
 /* #sidebar #sideNavigation {
     text-align: center;
 } */
@@ -48,6 +57,10 @@
 
 .main-navigation a {
     padding: .5em;
+}
+
+ul#top-menu.menu {
+    margin-bottom: 75px;
 }
 
 /* */
@@ -125,15 +138,92 @@
     margin-right: auto; */
     width: 300px;
     position: absolute;
-    top: 70%;
+    top: 22%;
     left: 38%;
-    background-color: white;
+    background-color: transparent;
     color: green;
     border: solid 2px green;
     border-radius: 5px;
     text-align: center;
 }
 
+#headerLogo {
+    width: 175px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.whiteSpace {
+    height: 120px;
+}
+
+ .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
+    border: none;
+} 
 
 /* Services */
 
+#servicesHeader {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+img.wp-image-44 {
+    width: 100%;
+    height: auto;
+}
+
+#skinServicesImage {
+    width: 40%;
+    float: left;
+}
+
+#skinServicesText {
+    width: 60%;
+    display: block;
+    /* clear: both;
+    float: right; */
+    padding: 50px;
+    padding-right: 100px;
+}
+
+/* <div id="skinServicesImage">
+<img src="http://localhost:8888/wp-content/uploads/2019/03/applying-body-body-lotion-286951.jpg" alt="skinServices">
+</div>
+<div id="skinServicesText">
+<h3>Skincare</h3>
+<h4>Signature Facial Treatment</h4>
+<p>Customized for your skin type and concerns. Includes: cleansing, exfoliation, skin analysis, steaming, extraction (if needed), mask, penetration of active ingredients and hydration. Eye treatment can be added to help alleviate excessive puffiness, dark circles and dryness.</p>
+<h4>Microdermabrasion</h4>
+<p>It is a progressive, non-invasive method of skin resurfacing that minimizes mild to moderate acne scars and age spots, reduces sun damage, pore size, as well as treats fine lines, uneven skin tone and wrinkles. It promotes new collagen and skin cell growth, resulting in clean, fresh and smooth skin. It removes a very superficial layer of skin cells and helps unclog pores. It is like a sand blast of skin, using micro mineral crystals, but in a gentle kind of way.
+</p>
+<h4>Chemical Peels</h4>
+<p>Treatments designed to remove dead surface cells with non-toxic, natural, hydroquinone free solutions. Blends of alpha and beta hydroxy acids and other ingredients are used to treat clogged pores, active acne, to reduce fine lines, wrinkles and scarring, to lighten hyperpigmentation, help clean up the debris accumulated in the pores of the skin, improve appearance of mature, aging and sun damaged skin. 
+Chemical peels are particularly beneficial for treatment of acne. They can be combined with prescriptions from doctor and the home care program largely due to them being relatively non-invasive with little downtime.
+</p>
+</div> */
+
+/* About */
+
+#aboutRocheText {
+    width: 50%;
+    display: block;
+    padding: 50px;
+
+}
+
+/* Social Media Section */
+
+#socialMediaContainer {
+    height: 150px;
+    width: 100%;
+    background-color: green;
+}
+
+#socialMediaContainer p{
+    color: white;
+}

@@ -36,6 +36,9 @@
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div id="sidebar">
 				<div id="sideNavigation">
+					<a href="http://localhost:8888/">
+					<img id="navLogo" src="http://localhost:8888/wp-content/uploads/2019/02/Icon.png">
+					</a>
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
