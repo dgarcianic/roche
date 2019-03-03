@@ -16,6 +16,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+/* html {
+    font-size: 2vw;
+} */
+
 /* Navigation */
 
 #sidebar {
@@ -106,6 +110,8 @@ ul#top-menu.menu {
 .homeRow {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .homeColumn {
@@ -141,8 +147,8 @@ ul#top-menu.menu {
     top: 22%;
     left: 38%;
     background-color: transparent;
-    color: green;
-    border: solid 2px green;
+    color: #327828;
+    border: solid 2px #327828;
     border-radius: 5px;
     text-align: center;
 }
@@ -177,42 +183,59 @@ img.wp-image-44 {
     height: auto;
 }
 
+#skinServicesContainer {
+    background:white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
 #skinServicesImage {
     width: 40%;
-    float: left;
+    /* float: left; */
 }
 
 #skinServicesText {
     width: 60%;
-    display: block;
+    /* display: block; */
     /* clear: both;
     float: right; */
-    padding: 50px;
+    /* padding: 50px; */
+    padding-top: 100px;
     padding-right: 100px;
+    padding-left: 150px;
 }
-
-/* <div id="skinServicesImage">
-<img src="http://localhost:8888/wp-content/uploads/2019/03/applying-body-body-lotion-286951.jpg" alt="skinServices">
-</div>
-<div id="skinServicesText">
-<h3>Skincare</h3>
-<h4>Signature Facial Treatment</h4>
-<p>Customized for your skin type and concerns. Includes: cleansing, exfoliation, skin analysis, steaming, extraction (if needed), mask, penetration of active ingredients and hydration. Eye treatment can be added to help alleviate excessive puffiness, dark circles and dryness.</p>
-<h4>Microdermabrasion</h4>
-<p>It is a progressive, non-invasive method of skin resurfacing that minimizes mild to moderate acne scars and age spots, reduces sun damage, pore size, as well as treats fine lines, uneven skin tone and wrinkles. It promotes new collagen and skin cell growth, resulting in clean, fresh and smooth skin. It removes a very superficial layer of skin cells and helps unclog pores. It is like a sand blast of skin, using micro mineral crystals, but in a gentle kind of way.
-</p>
-<h4>Chemical Peels</h4>
-<p>Treatments designed to remove dead surface cells with non-toxic, natural, hydroquinone free solutions. Blends of alpha and beta hydroxy acids and other ingredients are used to treat clogged pores, active acne, to reduce fine lines, wrinkles and scarring, to lighten hyperpigmentation, help clean up the debris accumulated in the pores of the skin, improve appearance of mature, aging and sun damaged skin. 
-Chemical peels are particularly beneficial for treatment of acne. They can be combined with prescriptions from doctor and the home care program largely due to them being relatively non-invasive with little downtime.
-</p>
-</div> */
 
 /* About */
 
+#aboutRocheContainer {
+    /* background: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 200px;
+}
+
+#aboutRocheImage {
+    height: auto;
+    width: 175px;
+}
+
+#aboutRocheImage img {
+    border-radius: 50%;
+}
+
 #aboutRocheText {
-    width: 50%;
-    display: block;
-    padding: 50px;
+     width: 500px;
+     padding-left: 5%;
+    /* display: block; */
+    /* padding: 200px; */
+    /* text-align: justify; */
+    letter-spacing: .6px;
+    font-size: 13px;
 
 }
 
@@ -221,9 +244,31 @@ Chemical peels are particularly beneficial for treatment of acne. They can be co
 #socialMediaContainer {
     height: 150px;
     width: 100%;
-    background-color: green;
+    background-color: #327828;
+    display: flex;
+    justify-content: center;
 }
 
 #socialMediaContainer p{
     color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 60px;
+}
+
+/* Footer */
+
+.site-footer .wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.site-info {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: #327828;
+    font-size: 12px;
 }
