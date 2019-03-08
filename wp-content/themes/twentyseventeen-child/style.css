@@ -122,6 +122,10 @@ ul#top-menu.menu {
     vertical-align: middle;
 }
 
+img.wp-image-37, img.wp-image-36, img.wp-image-35 {
+    width: 100%;
+}
+
 .page-one-column .panel-content .wrap {
     max-width: 100%;
 }
@@ -139,9 +143,9 @@ ul#top-menu.menu {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 5px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto;  */
     width: 300px;
     position: absolute;
     top: 22%;
@@ -169,7 +173,7 @@ ul#top-menu.menu {
 
  .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
     border: none;
-} 
+}
 
 /* Services */
 
