@@ -152,16 +152,16 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
     /* margin-left: auto; */
     /* margin-right: auto;  */
     width: 300px;
-     position: absolute; 
-    /* position: relative; */
-     top: 18%;
-    left: 37%; 
-    /* margin-left: calc(100% / 2 - 150px);
-    margin-top: -100%; */
+     /* position: absolute;  */
+     position: relative; 
+    /* top: 20%;
+    left: 37%;  */
+    margin-left: calc(100% / 2 - 150px);
+    top: -25%; 
     background-color: transparent;
     color: #327828;
     border: solid 2px #327828;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -186,14 +186,21 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
 /* Services */
 
 #servicesHeader {
-    max-height: 150px;
-    overflow: hidden;
+    /* max-height: 150px;
+    overflow: hidden; */
+    height: 150px;
 }
 
-img.wp-image-44 {
+#servicesHeaderImage {
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/02/4k-wallpaper-close-up-dew-807598.jpg");
     width: 100%;
     height: auto;
 }
+
+/* img.wp-image-44 {
+    width: 100%;
+    height: auto;
+} */
 
 #skinServicesContainer {
     background:white;
@@ -237,18 +244,16 @@ img.wp-image-44 {
 }
 
 #skinServicesText .skinServicesText h4{
- font-size: 1.125rem;
- font-weight: normal;
- color: #327828;
- padding-top: 15px;
- margin: 0
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #327828;
+    padding-top: 15px;
+    margin: 0
 }
 
-#skinServicesText .skinServicesText .skinService {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-flow: row wrap;
+span.price {
+    padding-left: 5px;
+    color: #929990;
 }
 
 #skinServicesText .skinServicesText p {
@@ -272,6 +277,7 @@ img.wp-image-44 {
 #aboutRocheImage {
     height: auto;
     width: 175px;
+    margin-top: 25px;
 }
 
 #aboutRocheImage img {
@@ -284,9 +290,20 @@ img.wp-image-44 {
     /* display: block; */
     /* padding: 200px; */
     /* text-align: justify; */
-    letter-spacing: .6px;
-    font-size: 13px;
+}
 
+section#aboutRocheSection #aboutRocheText h5 {
+    font-family: 'Quicksand', 'sans serif';
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #929990;
+}
+
+section#aboutRocheSection #aboutRocheText p {
+    letter-spacing: 1px;
+    font-size: .75rem;
+    line-height: 1.3125rem;
 }
 
 /* Social Media Section */
@@ -305,6 +322,13 @@ img.wp-image-44 {
     font-weight: bold;
     letter-spacing: 1px;
     padding-top: 60px;
+}
+
+#socialMediaContainer span img {
+    height: 50px;
+    width: auto;
+    margin-left: 35px;
+    margin-top: 48px;
 }
 
 /* Footer */
