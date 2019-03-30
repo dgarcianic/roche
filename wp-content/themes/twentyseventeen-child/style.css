@@ -24,7 +24,7 @@
 
 #sidebar {
     background-color: #e7efe5;
-    width: 10%;
+    width: 12.5%;
     height: 100%;
     position: fixed;
     display: flex;
@@ -49,6 +49,7 @@
 
 #sidebar #sideNavigation a {
     font-family: 'Quicksand', sans-serif;
+    font-size: .875rem;
     font-weight: bold; 
     letter-spacing: 1px;
     text-align: center;
@@ -70,7 +71,7 @@ ul#top-menu.menu {
 /* */
 
 #page.site {
-    width: 90%;
+    width: 87.5%;
     float: right;
 }
 
@@ -107,6 +108,10 @@ ul#top-menu.menu {
 
 /* Home */
 
+/* section.home {
+    height: 100vh;
+}  */
+
 .homeRow {
     display: flex;
     flex-wrap: wrap;
@@ -141,15 +146,18 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
 #bookRoche {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 5px;
     /* display: block; */
     /* margin-left: auto; */
     /* margin-right: auto;  */
     width: 300px;
-    position: absolute;
-    top: 22%;
-    left: 38%;
+     position: absolute; 
+    /* position: relative; */
+     top: 18%;
+    left: 37%; 
+    /* margin-left: calc(100% / 2 - 150px);
+    margin-top: -100%; */
     background-color: transparent;
     color: #327828;
     border: solid 2px #327828;
@@ -200,15 +208,53 @@ img.wp-image-44 {
     /* float: left; */
 }
 
+#skinServicesImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 #skinServicesText {
     width: 60%;
     /* display: block; */
     /* clear: both;
     float: right; */
     /* padding: 50px; */
-    padding-top: 100px;
-    padding-right: 100px;
-    padding-left: 150px;
+    padding: 5% 5% 5% 10%;
+}
+
+#skinServicesText .skinServicesCategory h3 {
+    font-size: 1.3125rem;
+    color: #929990;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Quicksand', 'sans serif';
+}
+
+#skinServicesText .skinServicesText {
+    padding-right: 20%;
+    padding-left: 8%;
+}
+
+#skinServicesText .skinServicesText h4{
+ font-size: 1.125rem;
+ font-weight: normal;
+ color: #327828;
+ padding-top: 15px;
+ margin: 0
+}
+
+#skinServicesText .skinServicesText .skinService {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+#skinServicesText .skinServicesText p {
+    font-size: .75rem;
+    margin-bottom: 10px;
+    line-height: 1.3125rem;
 }
 
 /* About */
@@ -263,6 +309,10 @@ img.wp-image-44 {
 
 /* Footer */
 
+.site-footer {
+    margin-top: 0;
+}
+
 .site-footer .wrap {
     margin: 0;
     padding: 0;
@@ -274,5 +324,9 @@ img.wp-image-44 {
     padding-top: 20px;
     padding-left: 50px;
     color: #327828;
-    font-size: 12px;
+    font-size: .75rem;
+}
+
+.site-info {
+    font-style: italic;
 }
