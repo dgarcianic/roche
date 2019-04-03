@@ -49,7 +49,7 @@
 
 #sidebar #sideNavigation a {
     font-family: 'Quicksand', sans-serif;
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: bold; 
     letter-spacing: 1px;
     text-align: center;
@@ -108,9 +108,9 @@ ul#top-menu.menu {
 
 /* Home */
 
-/* section.home {
+ /* section#home {
     height: 100vh;
-}  */
+}   */
 
 .homeRow {
     display: flex;
@@ -192,9 +192,20 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
 }
 
 #servicesHeaderImage {
-    background-image: url("http://localhost:8888/wp-content/uploads/2019/02/4k-wallpaper-close-up-dew-807598.jpg");
-    width: 100%;
-    height: auto;
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/4k-wallpaper-close-up-dew-807598-copy.jpg");
+    width: auto;
+    height: 100%;
+}
+
+#servicesHeader p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.75rem;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', 'sans serif';
+    padding-top: 48px;
+    font-weight: bolder;
 }
 
 /* img.wp-image-44 {
@@ -260,6 +271,27 @@ span.price {
     font-size: .75rem;
     margin-bottom: 10px;
     line-height: 1.3125rem;
+}
+
+/* Roche Glow */
+
+section#rocheGlow .homeColumn {
+    height: 420px;
+}
+
+ section#rocheGlow .homeColumn.girl1 {
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/kevin-laminto-608589-unsplash-copy.jpg");
+    background-size: cover;
+}
+
+section#rocheGlow .homeColumn.girl2 {
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/assel-askhatova-1134332-unsplash-copy.jpg");
+    background-size: cover;
+} 
+
+section#rocheGlow .homeColumn.girl3 {
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/icons8-team-1221954-unsplash-copy.jpg");
+    background-size: cover;
 }
 
 /* About */
@@ -353,4 +385,132 @@ section#aboutRocheSection #aboutRocheText p {
 
 .site-info {
     font-style: italic;
+}
+
+/* Media Queries */
+
+/* MIN-WIDTH */
+
+@media (min-width: 320px) {
+    section#rocheGlow .homeColumn {
+        height: 93px;
+    }
+}
+
+@media (min-width: 425px) {
+    section#rocheGlow .homeColumn {
+        height: 123px;
+    }
+}
+
+@media (min-width: 768px) {
+    section#rocheGlow .homeColumn {
+        height: 224px;
+    }
+}
+
+@media (min-width: 1024px) {
+    section#rocheGlow .homeColumn {
+        height: 299px;
+    }  
+}
+
+@media (min-width: 1440px) {
+    section#rocheGlow .homeColumn {
+        height: 420px;;
+    }
+}
+
+@media (min-width: 1441px) {
+    section#rocheGlow .homeColumn {
+        height: 750px;
+    }
+}
+
+/* MAX-WIDTH */
+
+@media (max-width: 1228px) {
+    #aboutRocheContainer {
+        margin: 200px 150px 200px 150px;
+    }
+}
+
+@media (max-width: 1114px) {
+    #aboutRocheContainer {
+        margin: 150px 100px 150px 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #bookRoche {
+        width: 200px;
+        margin-left: calc(100% / 2 - 100px);
+        font-size: .875rem;
+        border: solid 2px #327828;
+        letter-spacing: 3px;
+    }
+    .whiteSpace {
+        height: 80px;
+    }
+    #sidebar #sideNavigation a {
+        font-size: .75rem;
+        padding-bottom: 15px;
+    }
+    #aboutRocheContainer {
+        margin: 100px 50px 100px 50px;
+    }
+}
+
+@media (max-width: 885px) {
+    #aboutRocheContainer {
+        margin: 50px 50px 50px 50px;
+    }
+    #aboutRocheImage img {
+        margin-bottom: 30px;
+    }
+    section#aboutRocheSection #aboutRocheText h5 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    #page.site {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 768px) {
+    section#rocheGlow .homeColumn {
+        height: 224px;
+    }
+}
+
+@media (max-width: 686px) {
+    #skinServicesImage img {
+        display: none;
+    }
+    #skinServicesText {
+        width: 100%;
+    }
+    #skinServicesText .skinServicesCategory h3 {
+        padding-left: 8%;
+    }
+}
+
+@media (max-width: 600px) {
+    img.wp-image-35, img.wp-image-37 {
+        height: 300px;
+        object-fit: cover; 
+    }
+}
+
+@media (max-width: 576px) {
+   section#home .homeColumn.header1, section#home .homeColumn.header3 {
+        display: none;
+    }
 }
