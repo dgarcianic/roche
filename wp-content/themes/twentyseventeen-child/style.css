@@ -387,13 +387,39 @@ section#aboutRocheSection #aboutRocheText p {
     font-style: italic;
 }
 
+/* Mobile Nav */
+
+#mobileNav {
+    text-align: center;
+    /* background-color: #e7efe5; */
+    /* height: 75px; */
+    /* padding-top: 10px; */
+    margin-bottom: 10px;
+}
+
+#mobileNavItems {
+    margin-top: 12.5px;
+}
+
+#mobileNav a {
+    font-family: 'Quicksand', 'sans serif';
+    padding: 0 25px 0 15px;
+}
+
+/* Booking Plugin */
+
+.booking-plugin p {
+    font-family: 'Quicksand', 'sans serif';
+    text-transform: uppercase;
+}
+
 /* Media Queries */
 
 /* MIN-WIDTH */
 
 @media (min-width: 320px) {
     section#rocheGlow .homeColumn {
-        height: 93px;
+        height: 106px;
     }
 }
 
@@ -406,6 +432,12 @@ section#aboutRocheSection #aboutRocheText p {
 @media (min-width: 768px) {
     section#rocheGlow .homeColumn {
         height: 224px;
+    }
+    #mobileNav {
+        display: none;
+    }
+    #rocheHeader.mobileHeader {
+        display: none;
     }
 }
 
@@ -459,6 +491,13 @@ section#aboutRocheSection #aboutRocheText p {
     #aboutRocheContainer {
         margin: 100px 50px 100px 50px;
     }
+    #skinServicesText .skinServicesText {
+        padding-left: 0px;
+        padding-right: 15%;
+    }
+    #skinServicesText .skinServicesText h4 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 885px) {
@@ -471,22 +510,29 @@ section#aboutRocheSection #aboutRocheText p {
     section#aboutRocheSection #aboutRocheText h5 {
         text-align: center;
     }
+    #socialMediaContainer p {
+        font-size: .875rem;
+    }
 }
+
+/* @media (max-width: 768px) {
+    section#rocheGlow .homeColumn {
+        height: 224px;
+    }
+} */
 
 @media (max-width: 767px) {
     #sidebar {
         width: 100%;
         position: static;
+        display: none;
     }
     #page.site {
         width: 100%;
         float: none;
     }
-}
-
-@media (max-width: 768px) {
-    section#rocheGlow .homeColumn {
-        height: 224px;
+    section#home #headerLogo {
+        display: none;
     }
 }
 
@@ -497,8 +543,11 @@ section#aboutRocheSection #aboutRocheText p {
     #skinServicesText {
         width: 100%;
     }
-    #skinServicesText .skinServicesCategory h3 {
-        padding-left: 8%;
+    #socialMediaContainer {
+        padding: 0 50px;
+    }
+    #skinServicesText .skinServicesText h4 {
+        font-size: 1.125rem;
     }
 }
 
@@ -507,10 +556,54 @@ section#aboutRocheSection #aboutRocheText p {
         height: 300px;
         object-fit: cover; 
     }
+    #socialMediaContainer p {
+        width: 75%;
+    }
+    #socialMediaContainer span img {
+        height: 30px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 576px) {
    section#home .homeColumn.header1, section#home .homeColumn.header3 {
         display: none;
+    }
+    #socialMediaContainer {
+        height: auto;
+    }
+    #socialMediaContainer p {
+        padding-top: 25px;
+    }
+    #socialMediaContainer span img {
+        margin-top: 35px;
+    }
+    section#aboutRocheSection #aboutRocheText h5 {
+        text-align: left;
+        font-size: .75rem;
+        letter-spacing: 2.5px;
+    }
+}
+
+@media (max-width: 425px) {
+    #socialMediaContainer span img {
+        margin-top: 45px;
+    }
+    #servicesHeader p {
+        font-size: 1.5rem;
+        padding-top: 30px;
+    }
+    #servicesHeader {
+        height: 100px;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 320px) {
+    #mobileNav a {
+        /* font-size: .75rem; */
+        padding: 0 14px 0px 14px;
     }
 }

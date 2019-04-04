@@ -18,6 +18,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <?php wp_head(); ?>
 </head>
@@ -30,6 +32,32 @@
   				<a href="#">Services</a><br>
   				<a href="#">About</a><br>
   				<a href="#">Contact</a><br>
+			</div>
+		</div> -->
+
+		<div id="rocheHeader" class="mobileHeader">
+			<div id="headerLogo">
+				<img src="http://localhost:8888/wp-content/uploads/2019/02/Secondary-Logo-1.png" alt="roche-header-logo">
+			</div>
+			<div id="mobileNav">
+				<div id="mobileNavItems">
+					<a href="#">Home</a>
+  					<a href="#servicesSection">Services</a>
+  					<a href="#aboutRocheSection">About</a>
+  					<a href="#">Contact</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div id="mobileNav">
+			 <a id="mLogo" href="http://localhost:8888/">
+				<img id="mobileNavLogo" src="http://localhost:8888/wp-content/uploads/2019/02/Icon.png">
+			</a>
+			<div id="mobileNavItems">
+				<a href="#">Home</a>
+  				<a href="#servicesSection">Services</a>
+  				<a href="#aboutRocheSection">About</a>
+  				<a href="#">Contact</a>
 			</div>
 		</div> -->
 
