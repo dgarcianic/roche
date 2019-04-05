@@ -94,13 +94,13 @@
 <?php } ?>
 <div class="booking-plugin" style="clear:both;"></div>
 <p><?php _e('Name','appointment-booking-calendar'); ?></p>
-<input type="text" name="name" value="<?php /** if (isset($current_user->user_firstname)) echo $current_user->user_firstname." ".$current_user->user_lastname; */ ?>"><br />
+<input type="text" name="name" placeholder="Name" value="<?php /** if (isset($current_user->user_firstname)) echo $current_user->user_firstname." ".$current_user->user_lastname; */ ?>"><br />
 <p><?php _e('Email','appointment-booking-calendar'); ?></p>
-<input type="email" name="email" value="<?php /** if (isset($current_user->user_email)) echo $current_user->user_email; */ ?>"><br />
+<input type="email" name="email" placeholder="Email" value="<?php /** if (isset($current_user->user_email)) echo $current_user->user_email; */ ?>"><br />
 <p><?php _e('Phone Number','appointment-booking-calendar'); ?></p>
-<input type="text" name="phone" value=""><br />
+<input type="text" name="phone" placeholder="Phone Number" value=""><br />
 <p><?php _e('Describe your skin concern, and I will email as soon as I can.','appointment-booking-calendar'); ?></p>
-<textarea name="question" style="width:100%"></textarea><br />
+<textarea name="question" placeholder="Describe your skin concern and I will email you as soon as I can" style="width:100%"></textarea><br />
 <?php if (!is_admin() && cpabc_get_option('dexcv_enable_captcha', CPABC_TDEAPP_DEFAULT_dexcv_enable_captcha) != 'false') { ?>
   <?php _e('Please enter the security code:','appointment-booking-calendar'); ?><br />
   <img src="<?php echo cpabc_appointment_get_site_url().'/?cpabc_app=captcha'.cpabc_get_captcha_params(); ?>"  id="captchaimg" alt="security code" border="0"  />

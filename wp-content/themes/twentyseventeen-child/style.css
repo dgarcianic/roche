@@ -275,7 +275,22 @@ span.price {
 
 /* Roche Glow */
 
-section#rocheGlow .homeColumn {
+#rocheGlow {
+    position: relative;
+}
+
+.rocheGlowText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 9vw;
+    letter-spacing: 15px;
+    font-family: 'Quicksand', 'sans serif';
+}
+
+/* section#rocheGlow .homeColumn {
     height: 420px;
 }
 
@@ -292,7 +307,7 @@ section#rocheGlow .homeColumn.girl2 {
 section#rocheGlow .homeColumn.girl3 {
     background-image: url("http://localhost:8888/wp-content/uploads/2019/04/icons8-team-1221954-unsplash-copy.jpg");
     background-size: cover;
-}
+} */
 
 /* About */
 
@@ -303,7 +318,7 @@ section#rocheGlow .homeColumn.girl3 {
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 200px;
+    margin: 200px 0;
 }
 
 #aboutRocheImage {
@@ -406,33 +421,142 @@ section#aboutRocheSection #aboutRocheText p {
     padding: 0 25px 0 15px;
 }
 
+/* Contact Page */
+
+body.page-id-14 main#main {
+    width: 95%;
+    margin: auto;
+}
+
+
+body.page-id-14 .wrap {
+    max-width: 2560px;
+}
+
+
 /* Booking Plugin */
 
-.booking-plugin p {
+.cpp_form p {
     font-family: 'Quicksand', 'sans serif';
     text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #327828;
+    display: none;
 }
+
+.cpp_form input[type="text"], input[type="email"], textarea {
+    border: 1px solid #327828!important;
+    border-radius: 8px;
+}
+
+.cpp_form input::placeholder, .cpp_form textarea::placeholder {
+    color: #327828;
+    font-family: 'Quicksand', 'sans-serif';
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.cpp_form input[type="submit"] {
+    font-family: 'Quicksand', 'sans serif';
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cpp_form input.cp_subbtn {
+    background-color: #327828!important;
+}
+
+.yui-calendar .calhead {
+    background-color: #327828!important;
+    border-radius: 10px;
+}
+
+.calheader {
+    background-color: #327828;
+}
+
+.yui-calendar .calweekdaycell {
+    font-size: .875rem;
+    text-transform: uppercase;
+    padding: 30px!important;
+}
+
+.cell, .cell12 {
+    color: #327828;
+    border: none!important;
+}
+
+.yui-panel .hd {
+    background-color: #327828!important;
+}
+
+.yui-calendar td.calcell.selected, .yui-calendar td.calcell.reserveddate {
+    background-color: #327828!important;
+}
+
+.yui-calcontainer.multi .groupcal {
+    border: 0px solid #327828!important;
+}
+
+.abc_selectdate.fields {
+    display: none;
+}
+
+.yui-calendar td.calcell a {
+    color: #327828!important;
+    font-weight: bold;
+}
+
+.yui-calendar td.calcell.restricted {
+    color: #eee!important;
+    text-decoration: none!important;
+}
+
+#cp_abcform_pform .yui-calcontainer tr td, #cp_abcform_pform .yui-calcontainer tr th {
+    padding: 30px 0!important;
+}
+
+.yui-calendar div, .yui-calendar td, .yui-calendar th, .yui-calendar thead, .yui-calendar span {
+    font-family: 'quicksand', 'sans serif'!important;
+}
+
+.calheader {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 6px;
+}
+
+.yui-calendar td.calcell.selected a {
+    color: #ffffff!important;
+}
+
+#listcal1 div {
+    background-color: #327828!important;
+}
+
 
 /* Media Queries */
 
 /* MIN-WIDTH */
 
 @media (min-width: 320px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 106px;
-    }
+    } */
 }
 
 @media (min-width: 425px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 123px;
-    }
+    } */
 }
 
 @media (min-width: 768px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 224px;
-    }
+    } */
     #mobileNav {
         display: none;
     }
@@ -442,24 +566,65 @@ section#aboutRocheSection #aboutRocheText p {
 }
 
 @media (min-width: 1024px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 299px;
-    }  
+    }   */
 }
 
 @media (min-width: 1440px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 420px;;
-    }
+    } */
 }
 
 @media (min-width: 1441px) {
-    section#rocheGlow .homeColumn {
+    /* section#rocheGlow .homeColumn {
         height: 750px;
+    } */
+    #sidebar #sideNavigation a {
+        font-size: 1vw;
     }
+    #skinServicesText .skinServicesCategory h3 {
+        font-size: 1.3125vw;
+    }
+    #skinServicesText .skinServicesText h4 {
+        font-size: 1.125vw;
+    }
+    #skinServicesText .skinServicesText p {
+        font-size: .75vw;
+        line-height: 1.3125vw;
+    }
+    section#aboutRocheSection #aboutRocheText h5 {
+        font-size: 1.125vw;
+    }
+    section#aboutRocheSection #aboutRocheText p {
+        font-size: .75vw;
+        line-height: 1.3125vw;
+    }
+    #aboutRocheImage {
+        width: 15vw;
+    }
+    #aboutRocheText {
+        padding-top: 3vw;
+        width: 35vw;
+    }
+    #bookRoche {
+        font-size: 1vw;
+        width: 23vw;
+        margin-left: calc(100% / 2 - 11.5vw);
+    }
+    /* #aboutRocheContainer {
+        margin: 100px 200px;
+    } */
 }
 
 /* MAX-WIDTH */
+
+@media (max-width: 1280px) {
+    /* .rocheGlowText {
+        font-size: 8rem;
+    } */
+}
 
 @media (max-width: 1228px) {
     #aboutRocheContainer {
@@ -498,6 +663,9 @@ section#aboutRocheSection #aboutRocheText p {
     #skinServicesText .skinServicesText h4 {
         font-size: 1rem;
     }
+    /* .rocheGlowText {
+        font-size: 6rem;
+    } */
 }
 
 @media (max-width: 885px) {
@@ -513,13 +681,16 @@ section#aboutRocheSection #aboutRocheText p {
     #socialMediaContainer p {
         font-size: .875rem;
     }
+    #rocheGlow .homeColumn.person6 {
+        display: none
+    }
 }
 
-/* @media (max-width: 768px) {
-    section#rocheGlow .homeColumn {
-        height: 224px;
+@media (max-width: 768px) {
+    #rocheGlow .homeColumn.person5 {
+        display: none;
     }
-} */
+}
 
 @media (max-width: 767px) {
     #sidebar {
@@ -533,6 +704,14 @@ section#aboutRocheSection #aboutRocheText p {
     }
     section#home #headerLogo {
         display: none;
+    }
+    body.page-id-14 main#main {
+        width: 90%;
+        margin: auto;
+    }
+    input.cp_subbtn {
+        margin: auto;
+        display: block;
     }
 }
 
@@ -570,6 +749,10 @@ section#aboutRocheSection #aboutRocheText p {
    section#home .homeColumn.header1, section#home .homeColumn.header3 {
         display: none;
     }
+    section#home .homeColumn img{
+        height: 500px;
+        object-fit: cover;
+    }
     #socialMediaContainer {
         height: auto;
     }
@@ -583,6 +766,15 @@ section#aboutRocheSection #aboutRocheText p {
         text-align: left;
         font-size: .75rem;
         letter-spacing: 2.5px;
+    }
+    #bookRoche {
+        width: 350px;
+        margin-left: calc(100% / 2 - 175px);
+        font-size: 1rem;
+        top: -48%;
+    }
+    #rocheGlow .homeColumn.person4 {
+        display: none;
     }
 }
 
@@ -598,7 +790,19 @@ section#aboutRocheSection #aboutRocheText p {
         height: 100px;
         width: auto;
     }
-
+    section#home .homeColumn img{
+        height: 300px;
+        object-fit: cover;
+    }
+    #bookRoche {
+        width: 250px;
+        margin-left: calc(100% / 2 - 125px);
+        font-size: 1rem;
+        top: -48%;
+    }
+    #rocheGlow .homeColumn.person3 {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
