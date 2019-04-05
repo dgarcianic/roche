@@ -41,10 +41,10 @@
 			</div>
 			<div id="mobileNav">
 				<div id="mobileNavItems">
-					<a href="#">Home</a>
-  					<a href="#servicesSection">Services</a>
-  					<a href="#aboutRocheSection">About</a>
-  					<a href="#">Contact</a>
+					<a href="home">Home</a>
+  					<a href="home#servicesSection">Services</a>
+  					<a href="home#aboutRocheSection">About</a>
+  					<a href="/contact">Contact</a>
 				</div>
 			</div>
 		</div>

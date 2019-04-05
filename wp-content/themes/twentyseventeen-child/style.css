@@ -19,6 +19,13 @@
 /* html {
     font-size: 2vw;
 } */
+.entry-content a {
+    box-shadow: none!important;
+}
+
+#sidebar #sideNavigation a:hover {
+    color: #327828!important;
+}
 
 /* Navigation */
 
@@ -423,14 +430,26 @@ section#aboutRocheSection #aboutRocheText p {
 
 /* Contact Page */
 
-body.page-id-14 main#main {
+/* body.page-id-14 main#main {
+    width: 95%;
+    margin: auto;
+} */
+
+body.page-id-14 div#content {
     width: 95%;
     margin: auto;
 }
 
-
 body.page-id-14 .wrap {
     max-width: 2560px;
+}
+
+#contactPage .homeColumn h2 {
+    margin-top: 30px;
+}
+
+#contactPage .homeColumn.contactText {
+    margin-right: 5%;
 }
 
 
@@ -454,7 +473,6 @@ body.page-id-14 .wrap {
     color: #327828;
     font-family: 'Quicksand', 'sans-serif';
     font-weight: bolder;
-    letter-spacing: 1px;
 }
 
 .cpp_form input[type="submit"] {
@@ -534,6 +552,14 @@ body.page-id-14 .wrap {
 
 #listcal1 div {
     background-color: #327828!important;
+}
+
+input[type="text"], input[type="email"], textarea {
+    color: #327828!important;
+}
+
+.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
+    max-width: 2560px;
 }
 
 
@@ -706,7 +732,7 @@ body.page-id-14 .wrap {
         display: none;
     }
     body.page-id-14 main#main {
-        width: 90%;
+        /* width: 90%; */
         margin: auto;
     }
     input.cp_subbtn {
@@ -803,11 +829,13 @@ body.page-id-14 .wrap {
     #rocheGlow .homeColumn.person3 {
         display: none;
     }
+    #mobileNav a {
+        padding: 0 14px 0px 14px;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 331px) {
     #mobileNav a {
-        /* font-size: .75rem; */
-        padding: 0 14px 0px 14px;
+        font-size: .75rem;
     }
 }
