@@ -183,7 +183,7 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
 }
 
 .whiteSpace {
-    height: 120px;
+    height: 60px;
 }
 
  .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
@@ -199,20 +199,21 @@ img.wp-image-37, img.wp-image-36, img.wp-image-35 {
 }
 
 #servicesHeaderImage {
-    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/4k-wallpaper-close-up-dew-807598-copy.jpg");
-    width: auto;
+    background-image: url("http://localhost:8888/wp-content/uploads/2019/04/augustine-wong-718471-unsplash-copy.jpg");
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 #servicesHeader p {
     text-align: center;
-    color: #FFFFFF;
+    color: #327828;
     font-size: 2.75rem;
     letter-spacing: 20px;
     text-transform: uppercase;
     font-family: 'Quicksand', 'sans serif';
     padding-top: 48px;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 /* img.wp-image-44 {
@@ -291,10 +292,15 @@ span.price {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 9vw;
+    font-weight: lighter;
     letter-spacing: 15px;
     font-family: 'Quicksand', 'sans serif';
+}
+
+#rocheGlow .homeRow {
+    opacity: .6;
 }
 
 /* section#rocheGlow .homeColumn {
@@ -672,9 +678,9 @@ input[type="text"], input[type="email"], textarea {
         border: solid 2px #327828;
         letter-spacing: 3px;
     }
-    .whiteSpace {
-        height: 80px;
-    }
+    /* .whiteSpace {
+        height: 60px;
+    } */
     #sidebar #sideNavigation a {
         font-size: .75rem;
         padding-bottom: 15px;
@@ -797,7 +803,7 @@ input[type="text"], input[type="email"], textarea {
         width: 350px;
         margin-left: calc(100% / 2 - 175px);
         font-size: 1rem;
-        top: -48%;
+        top: -25%;
     }
     #rocheGlow .homeColumn.person4 {
         display: none;
@@ -824,7 +830,7 @@ input[type="text"], input[type="email"], textarea {
         width: 250px;
         margin-left: calc(100% / 2 - 125px);
         font-size: 1rem;
-        top: -48%;
+        top: -20%;
     }
     #rocheGlow .homeColumn.person3 {
         display: none;
